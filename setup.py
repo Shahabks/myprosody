@@ -93,7 +93,7 @@ functions."""
 	
 	
 setup(name='myprosody',
-      version='0.1',
+      version='8',
       description='the prosodic features of speech (simultaneous speech) compared to the features of native speech',
 	  long_description=long_description,
 	  url='https://github.com/Shahabks/myprosody',
@@ -112,7 +112,6 @@ setup(name='myprosody',
 		'praat-parselmouth>=0.3.2',
 		'pandas>=0.23.4',
 		'scipy>=1.1.0',
-		'csv',
 		],
 	  packages=['myprosody'],
       zip_safe=False)
