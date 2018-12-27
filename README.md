@@ -6,10 +6,15 @@ A phonetic study of prosody is a study of the suprasegmental features of speech.
 1.	vocal pitch (fundamental frequency)
 2.	acoustic intensity
 3.	rhythm (phoneme and syllable duration)
+
 MyProsody is a Python library for measuring these acoustic features of speech (simultaneous speech, high entropy) compared to ones of native speech. The acoustic features of native speech patterns have been observed and established by employing Machine Learning algorithms. An acoustic model (algorithm) breaks recorded utterances (48 kHz & 32 bit sampling rate and bit depth respectively) and detects syllable boundaries, fundamental frequency contours, and formants. Its built-in functions recognize/measures:
+
 o	Average_syll_pause_duration
+
 o	No._long_pause
+
 o	Speaking-time
+
 o	No._of_words_in_minutes
 o	Articulation_rate 
 o	No._words_in_minutes
