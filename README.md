@@ -63,7 +63,7 @@ https://github.com/Shahabks/myprosody
 
                                                  Development
 
-Myprosody was developed by MYOLUTIONS Lab in Japan. It is part of New Generation of Voice Recognition and Acoustic & Language modelling Project in MYSOLUTIONS Lab. That is planned to rich the functionality of My-Voice Analysis by adding more advanced functions. 
+Myprosody was developed by MYOLUTIONS Lab in Japan. It is part of New Generation of Voice Recognition and Acoustic & Language modelling Project in MYSOLUTIONS Lab. That is planned to enrich the functionality of Myprosody by adding more advanced functions. 
 
                                            References and Acknowledgements
 
