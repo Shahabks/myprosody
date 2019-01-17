@@ -83,7 +83,8 @@ To check how the myprosody functions behave, please check
 
                                     EXAMPLES.docx 
                                     
-on                      https://github.com/Shahabks/myprosody
+on
+                        https://github.com/Shahabks/myprosody
 
 ## Development
 
