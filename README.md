@@ -9,13 +9,37 @@ A phonetic study of prosody is a study of the suprasegmental features of speech.
 
 MyProsody is a Python library for measuring these acoustic features of speech (simultaneous speech, high entropy) compared to ones of native speech. The acoustic features of native speech patterns have been observed and established by employing Machine Learning algorithms. An acoustic model (algorithm) breaks recorded utterances (48 kHz & 32 bit sampling rate and bit depth respectively) and detects syllable boundaries, fundamental frequency contours, and formants. Its built-in functions recognize/measures:
 
-o	Average_syll_pause_duration / o	No._long_pause /o	Speaking-time / o	No._of_words_in_minutes/ o	Articulation_rate /
-o	No._words_in_minutes / o	formants_index / o	f0_index ((f0 is for fundamental frequency) / o	f0_quantile_25_index /
-o	f0_quantile_50_index / o	f0_quantile_75_index / o	f0_std / o	f0_max / o	f0_min / o	No._detected_vowel / o	perc%._correct_vowel
-o	(f2/f1)_mean (1st and 2nd formant frequencies) / o	(f2/f1)_std / o	no._of_words / o	no._of_pauses / o	intonation_index /
-o	(voiced_syll_count)/(no_of_pause) / o	TOEFL_Scale_Score / o	Score_Shannon_index / o	speaking_rate / o	gender recognition /
-o	speech mood (semantic analysis) / o	pronunciation posterior score / o	articulation-rate / o	speech rate / o	filler words /
-o	f0 statistics
+                         o	Average_syll_pause_duration 
+                         o	No._long_pause /o	Speaking-time 
+                         o	No._of_words_in_minutes
+                         o	Articulation_rate
+                         o	No._words_in_minutes
+                         o	formants_index
+                         o	f0_index ((f0 is for fundamental frequency)
+                         o	f0_quantile_25_index 
+                         o	f0_quantile_50_index 
+                         o	f0_quantile_75_index 
+                         o	f0_std 
+                         o	f0_max 
+                         o	f0_min 
+                         o	No._detected_vowel 
+                         o	perc%._correct_vowel
+                         o	(f2/f1)_mean (1st and 2nd formant frequencies)
+                         o	(f2/f1)_std
+                         o	no._of_words
+                         o	no._of_pauses
+                         o	intonation_index 
+                         o	(voiced_syll_count)/(no_of_pause)
+                         o	TOEFL_Scale_Score 
+                         o	Score_Shannon_index
+                         o	speaking_rate
+                         o	gender recognition
+                         o	speech mood (semantic analysis)
+                         o	pronunciation posterior score
+                         o	articulation-rate 
+                         o	speech rate 
+                         o	filler words
+                         o	f0 statistics
 
 The library was developed based upon the idea introduced by Klaus Zechner et al “Automatic scoring of non-native spontaneous speech in tests of spoken English” Speech Communicaion vol 51-2009, Nivja DeJong and Ton Wempe [1], Paul Boersma and David Weenink [2], Carlo Gussenhoven [3], S.M Witt and S.J. Young [4] , and Yannick Jadoul [5].
 
