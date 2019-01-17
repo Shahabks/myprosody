@@ -51,45 +51,45 @@ This library is for Linguists, scientists, developers, speech and language thera
 Please note that MyProsody Analysis is currently in initial state though in active development. While the amount of functionality that is currently present is not huge, more will be added over the next few months.
 
 
-                                                   Installation
+## Installation
 
 Myprosody can be installed like any other Python library, using (a recent version of) the Python package manager pip, on Linux, macOS, and Windows:
 
-                                                 pip install myprosody
+                                        pip install myprosody
 
 or, to update your installed version to the latest release:
 
-                                                 pip install -u myprosody
+                                        pip install -u myprosody
 
-NOTE: 
+## NOTE: 
 
 After installing Myprosody, download the files 
 
-                                               1.	myspsolution.praat
+                                  1.	myspsolution.praat
 
-                                               2.	MLTRNL.praat
+                                  2.	MLTRNL.praat
 
-                                               3.	stats.csv
+                                  3.	stats.csv
 
 from
 
-https://github.com/Shahabks/myprosody
+                        https://github.com/Shahabks/myprosody
 
 and save in the directory where you will save audio files for analysis.
 
-Audio files must be in *.wav format, recorded at 48 kHz sample frame and 24-32 bits of resolution.
+### Audio files must be in *.wav format, recorded at 48 kHz sample frame and 24-32 bits of resolution.
 
 To check how the myprosody functions behave, please check 
 
-                                                EXAMPLES.docx on
+                                    EXAMPLES.docx 
+                                    
+on                      https://github.com/Shahabks/myprosody
 
-https://github.com/Shahabks/myprosody
-
-                                                 Development
+## Development
 
 Myprosody was developed by MYOLUTIONS Lab in Japan. It is part of New Generation of Voice Recognition and Acoustic & Language modelling Project in MYSOLUTIONS Lab. That is planned to enrich the functionality of Myprosody by adding more advanced functions. 
 
-                                           References and Acknowledgements
+## References and Acknowledgements
 
 1.	DeJong N.H, and Ton Wempe [2009]; “Praat script to detect syllable nuclei and measure speech rate automatically”; Behavior Research Methods, 41(2).385-390.
 
