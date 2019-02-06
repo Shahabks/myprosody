@@ -79,7 +79,7 @@ After installing Myprosody, download the folder called:
                                   
 from
 
-                        https://github.com/Shahabks/myprosody
+   https://github.com/Shahabks/myprosody
 
 and save on your computer. The folder includes the audio files folder where you will save your audio files 
 for analysis.
@@ -91,7 +91,8 @@ To check how the myprosody functions behave, please check
                                     EXAMPLES.pdf
                                     
 on
-                        https://github.com/Shahabks/myprosody
+
+    https://github.com/Shahabks/myprosody
 
 ## Development
 
