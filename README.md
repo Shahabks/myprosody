@@ -1,8 +1,12 @@
 # myprosody
+## *** Version-10 release: two new functions were added ***
+### NEW VERSION: the prosodic features of speech (simultaneous speech) compared to the features of native speech ***spoken language proficiency level estimator
+
 A Python library for measuring the acoustic features of speech (simultaneous speech, high entropy) compared to ones of native speech.
 
 Prosody is the study of the tune and rhythm of speech and how these features contribute to meaning. Prosody is the study of those aspects of speech that typically apply to a level above that of the individual phoneme and very often to sequences of words (in prosodic phrases). Features above the level of the phoneme (or "segment") are referred to as suprasegmentals. 
 A phonetic study of prosody is a study of the suprasegmental features of speech. At the phonetic level, prosody is characterised by: 
+
 1.	vocal pitch (fundamental frequency)
 2.	acoustic intensity
 3.	rhythm (phoneme and syllable duration)
@@ -40,10 +44,15 @@ MyProsody is a Python library for measuring these acoustic features of speech (s
                          o	speech rate 
                          o	filler words
                          o	f0 statistics
+                         -------------
+                         NEW
+                         --------------
+                         o level (CEFR level)
+                         o prosody-aspects (comparison, native level)
 
 The library was developed based upon the idea introduced by Klaus Zechner et al “Automatic scoring of non-native spontaneous speech in tests of spoken English” Speech Communicaion vol 51-2009, Nivja DeJong and Ton Wempe [1], Paul Boersma and David Weenink [2], Carlo Gussenhoven [3], S.M Witt and S.J. Young [4] , and Yannick Jadoul [5].
 
- Peaks in intensity (dB) that are preceded and followed by dips in intensity are considered as potential syllable cores. 
+Peaks in intensity (dB) that are preceded and followed by dips in intensity are considered as potential syllable cores. 
 MyProsody is unique in its aim to provide a complete quantitative and analytical way to study acoustic features of a speech. Moreover, those features could be analysed further by employing Python's functionality to provide more fascinating insights into speech patterns. 
 
 This library is for Linguists, scientists, developers, speech and language therapy clinics and researchers.  
@@ -63,25 +72,23 @@ or, to update your installed version to the latest release:
 
 ## NOTE: 
 
-After installing Myprosody, download the files 
+After installing Myprosody, download the folder called:  
 
-                                  1.	myspsolution.praat
+                                      myprosody
 
-                                  2.	MLTRNL.praat
-
-                                  3.	stats.csv
-
+                                  
 from
 
                         https://github.com/Shahabks/myprosody
 
-and save in the directory where you will save audio files for analysis.
+and save on your computer. The folder includes the audio files folder where you will save your audio files 
+for analysis.
 
 ### Audio files must be in *.wav format, recorded at 48 kHz sample frame and 24-32 bits of resolution.
 
 To check how the myprosody functions behave, please check 
 
-                                    EXAMPLES.docx 
+                                    EXAMPLES.pdf
                                     
 on
                         https://github.com/Shahabks/myprosody
