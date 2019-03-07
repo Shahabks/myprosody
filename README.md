@@ -1,4 +1,5 @@
 # myprosody
+## **  The python script of myprosody revised and now is available here on "master branch" **
 ## *** Version-10 release: two new functions were added ***
 ### NEW VERSION: the prosodic features of speech (simultaneous speech) compared to the features of native speech ***spoken language proficiency level estimator
 
