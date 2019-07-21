@@ -96,6 +96,7 @@ for analysis.
 To check how the myprosody functions behave, please check 
 
                                     EXAMPLES.pdf
+                                    testpro.py
                                     
 on
 
