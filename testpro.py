@@ -1,4 +1,5 @@
 import myprosody as mysp
+import pickle
 
 p="Walkers" *Audio file name
 c=r"C:\Users\.......YOUR_NAME........\Desktop\myprosody" *an example of path to directory "myprosody" 
