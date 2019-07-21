@@ -71,6 +71,12 @@ or, to update your installed version to the latest release:
 
                                         pip install -u myprosody
 
+you need also 
+
+                                        import pickle
+                                        
+to run those functions of "Myprosody" which predict the spoken language proficiency level of your audio files. You need the pickle library to activate the trained acoustic and language models
+
 ## NOTE: 
 
 After installing Myprosody, download the folder called:  
