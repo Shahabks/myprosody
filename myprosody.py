@@ -36,6 +36,9 @@ def run_praat_file(m, p):
 
 
 def myspsyl(m,p):
+    """
+    Detect and count number of syllables
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[0]) # will be the integer number 10
     z4=float(z2[3]) # will be the floating point number 8.3
@@ -43,6 +46,9 @@ def myspsyl(m,p):
     return z3
 
 def mysppaus(m,p):
+    """
+    Detect and count number of fillers and pauses
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[1]) # will be the integer number 10
     z4=float(z2[3]) # will be the floating point number 8.3
@@ -50,6 +56,9 @@ def mysppaus(m,p):
     return z3
 
 def myspsr(m,p):
+    """
+    Measure the rate of speech (speed)
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[2]) # will be the integer number 10
     z4=float(z2[3]) # will be the floating point number 8.3
@@ -57,6 +66,9 @@ def myspsr(m,p):
     return z3
 
 def myspatc(m,p):
+    """
+    Measure the articulation (speed)
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[3]) # will be the integer number 10
     z4=float(z2[3]) # will be the floating point number 8.3
@@ -64,6 +76,9 @@ def myspatc(m,p):
     return z3
 
 def myspst(m,p):
+    """
+    Measure speaking time (excl. fillers and pause)
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[3]) # will be the integer number 10
     z4=float(z2[4]) # will be the floating point number 8.3
@@ -71,6 +86,9 @@ def myspst(m,p):
     return z4
 
 def myspod(m,p):
+    """
+    Measure total speaking duration (inc. fillers and pauses)
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[3]) # will be the integer number 10
     z4=float(z2[5]) # will be the floating point number 8.3
@@ -78,6 +96,9 @@ def myspod(m,p):
     return z4
 
 def myspbala(m,p):
+    """
+    Measure ratio between speaking duration and total speaking duration
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[3]) # will be the integer number 10
     z4=float(z2[6]) # will be the floating point number 8.3
@@ -85,6 +106,9 @@ def myspbala(m,p):
     return z4
 
 def myspf0mean(m,p):
+    """
+    Measure fundamental frequency distribution mean
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[3]) # will be the integer number 10
     z4=float(z2[7]) # will be the floating point number 8.3
@@ -92,6 +116,9 @@ def myspf0mean(m,p):
     return z4
 
 def myspf0sd(m,p):
+    """
+    Measure fundamental frequency distribution SD
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[3]) # will be the integer number 10
     z4=float(z2[8]) # will be the floating point number 8.3
@@ -99,6 +126,9 @@ def myspf0sd(m,p):
     return z4
 
 def myspf0med(m,p):
+    """
+    Measure fundamental frequency distribution median
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[3]) # will be the integer number 10
     z4=float(z2[9]) # will be the floating point number 8.3
@@ -106,6 +136,9 @@ def myspf0med(m,p):
     return z4
 
 def myspf0min(m,p):
+    """
+    Measure fundamental frequency distribution minimum
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[10]) # will be the integer number 10
     z4=float(z2[10]) # will be the floating point number 8.3
@@ -113,6 +146,9 @@ def myspf0min(m,p):
     return z3
 
 def myspf0max(m,p):
+    """
+    Measure fundamental frequency distribution maximum
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[11]) # will be the integer number 10
     z4=float(z2[11]) # will be the floating point number 8.3
@@ -120,6 +156,9 @@ def myspf0max(m,p):
     return z3
 
 def myspf0q25(m,p):
+    """
+    Measure 25th quantile fundamental frequency distribution
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[12]) # will be the integer number 10
     z4=float(z2[11]) # will be the floating point number 8.3
@@ -127,6 +166,9 @@ def myspf0q25(m,p):
     return z3
 
 def myspf0q75(m,p):
+    """
+    Measure 75th quantile fundamental frequency distribution
+    """
     z2 = run_praat_file(m, p)
     z3=int(z2[13]) # will be the integer number 10
     z4=float(z2[11]) # will be the floating point number 8.3
@@ -134,6 +176,9 @@ def myspf0q75(m,p):
     return z3
 
 def mysptotal(m,p):
+    """
+    Overview
+    """
     z2 = run_praat_file(m, p)
     z3=np.array(z2)
     z4=np.array(z3)[np.newaxis]
@@ -145,6 +190,10 @@ def mysptotal(m,p):
     return dataset.T
 
 def mysppron(m,p):
+    """
+    Pronunciation posteriori probability score percentage
+    """
+
     sound=p+"/"+"dataset"+"/"+"audioFiles"+"/"+m+".wav"
     sourcerun=p+"/"+"dataset"+"/"+"essen"+"/"+"myspsolution.praat"
     path=p+"/"+"dataset"+"/"+"audioFiles"+"/"
@@ -161,9 +210,12 @@ def mysppron(m,p):
         print ("Pronunciation_posteriori_probability_score_percentage= :%.2f" % (b))
     except:
         print ("Try again the sound of the audio was not clear")
-    return;
+    return
 
 def myspgend(m,p):
+    """
+    Gender recognition and mood of speech
+    """
     sound=p+"/"+"dataset"+"/"+"audioFiles"+"/"+m+".wav"
     sourcerun=p+"/"+"dataset"+"/"+"essen"+"/"+"myspsolution.praat" 
     path=p+"/"+"dataset"+"/"+"audioFiles"+"/"
@@ -232,6 +284,9 @@ def myspgend(m,p):
         print ("Try again the sound of the audio was not clear")
 
 def myprosody(m,p):
+    """
+    Compared to native speech, here are the prosodic features of your speech
+    """
     sound=p+"/"+"dataset"+"/"+"audioFiles"+"/"+m+".wav"
     sourcerun=p+"/"+"dataset"+"/"+"essen"+"/"+"MLTRNL.praat"
     path=p+"/"+"dataset"+"/"+"audioFiles"+"/"
@@ -291,6 +346,10 @@ def myprosody(m,p):
         print ("Try again the sound of the audio was not clear")	
     
 def mysplev(m,p):
+    """
+    Spoken Language Proficiency Level estimator, 
+    based on Machine Learning models of the prosodic features of your speech
+    """
 	import sys
 	def my_except_hook(exctype, value, traceback):
 		print('There has been an error in the system')
