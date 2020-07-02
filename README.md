@@ -3,6 +3,12 @@
 ## *** Version-10 release: two new functions were added ***
 ### NEW VERSION: the prosodic features of speech (simultaneous speech) compared to the features of native speech ***spoken language proficiency level estimator
 
+## NOTE:
+    1- 1- Both My-Voice-Analysis and Myprosody work on Python 3.7 
+    2- If you install My-Voice-Analysis through PyPi, please use: 
+          mysp=__import__("my-voice-analysis") instead of import myspsolution as mysp
+    3- It it better to keep the folder names as single entities for instance "Name_Folder" or "NameFolder" without space in the dirctoy path
+
 A Python library for measuring the acoustic features of speech (simultaneous speech, high entropy) compared to ones of native speech.
 
 Prosody is the study of the tune and rhythm of speech and how these features contribute to meaning. Prosody is the study of those aspects of speech that typically apply to a level above that of the individual phoneme and very often to sequences of words (in prosodic phrases). Features above the level of the phoneme (or "segment") are referred to as suprasegmentals. 
