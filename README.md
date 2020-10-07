@@ -1,3 +1,6 @@
+[![GitHub stars](https://img.shields.io/github/stars/Shahabks/myprosody?style=flat-square)](https://github.com/Shahabks/myprosody/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Shahabks/myprosody?style=flat-square&color=blueviolet)](https://github.com/Shahabks/myprosody/network/members)
+
 # myprosody
 ## **  The python script of myprosody revised and now is available here on "master branch" **
 ## *** Version-10 release: two new functions were added ***
