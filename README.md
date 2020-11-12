@@ -7,7 +7,7 @@
 ### NEW VERSION: the prosodic features of speech (simultaneous speech) compared to the features of native speech ***spoken language proficiency level estimator
 
 ## NOTE:
-    1- 1- Both My-Voice-Analysis and Myprosody work on Python 3.7 
+    1- Both My-Voice-Analysis and Myprosody work on Python 3.7 
     2- If you install My-Voice-Analysis through PyPi, please use: 
           mysp=__import__("my-voice-analysis") instead of import myspsolution as mysp
     3- It it better to keep the folder names as single entities for instance "Name_Folder" or "NameFolder" without space in the dirctoy path
