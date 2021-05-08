@@ -72,6 +72,9 @@ minpause = 'minimum_pause_duration'
  Read from file... 'soundin$'
 
 
+
+
+
 # use object ID
    soundname$ = selected$("Sound")
    soundid = selected("Sound")
@@ -321,68 +324,81 @@ if int<2
 					vsa=vsa+1
 						elsif space>=3 and space<=12
 							vsa=vsa+1
-					else vsa=vsa+0 
+				else 
+					vsa=vsa+0 
 				endif
 				
 				f1uplim =(lnf2f1-13.17)/-0.012
 				f1lowlim =(lnf2f1-8.18)/-0.0148
 			
 			if 1/ff<=0.176 and 1/ff>= 0.0744
-							vowel1=vowel1+1
-								else vowel1=vowel1+0
-						endif
-						if 1/ff<=0.227 and 1/ff>= 0.127
-							vowel1=vowel1+1 
-								else vowel1=vowel1+0
-						endif
-						if 1/ff<=0.245 and 1/ff>=0.145
-							vowel1=vowel1+1 	
-								else vowel1=vowel1+0
-						endif
-						if 1/ff<=0.361 and 1/ff>= 0.261
-							vowel1=vowel1+1
-								else vowel1=vowel1+0
-						endif
-						if 1/ff<=0.605 and 1/ff>= 0.505
-							vowel1=vowel1+1
-								else vowel1=vowel1+0
-						endif
-						if 1/ff<=0.760 and 1/ff>= 0.660
-							vowel1=vowel1+1
-								else vowel1=vowel1+0
-						endif
-						if 1/ff<=0.733 and 1/ff>= 0.632
-							vowel1=vowel1+1
-								else vowel1=vowel1+0
-						endif
-						if 1/ff<=0.489 and 1/ff>= 0.388
-							vowel1=vowel1+1
-								else vowel1=vowel1+0
-						endif
-						if 1/ff<=0.414 and 1/ff>= 0.313
-							vowel1=vowel1+1
-								else vowel1=vowel1+0
-						endif
-						if 1/ff<=0.312 and 1/ff>= 0.211
-							vowel1=vowel1+1
-								else vowel1=vowel1+0
-						endif
-						if 1/ff<=0.569 and 1/ff>= 0.469
-							vowel1=vowel1+1
-								else vowel1=vowel1+0
-						endif
-						counter1=counter1+1
-				
-				if lnf1>='f1lowlim' and lnf1<='f1uplim' 
-					inside = 'inside'+1
-					else
-					   outside = 'outside'+1
-				endif
-				
-				vectorf# [k] = ff
-				
-					fff = 'fff'+'f1uplim'
-					eee = 'eee'+'f1lowlim'
+				vowel1=vowel1+1
+			else
+				vowel1=vowel1+0
+			endif
+			if 1/ff<=0.227 and 1/ff>= 0.127
+				vowel1=vowel1+1 
+			else
+				vowel1=vowel1+0
+			endif
+			if 1/ff<=0.245 and 1/ff>=0.145
+				vowel1=vowel1+1
+			else
+				vowel1=vowel1+0
+			endif
+			if 1/ff<=0.361 and 1/ff>= 0.261
+				vowel1=vowel1+1
+			else 
+				vowel1=vowel1+0
+			endif
+			if 1/ff<=0.605 and 1/ff>= 0.505
+				vowel1=vowel1+1
+			else 
+				vowel1=vowel1+0
+			endif
+			if 1/ff<=0.760 and 1/ff>= 0.660
+				vowel1=vowel1+1
+			else 
+				vowel1=vowel1+0
+			endif
+			if 1/ff<=0.733 and 1/ff>= 0.632
+				vowel1=vowel1+1
+			else 
+				vowel1=vowel1+0
+			endif
+			if 1/ff<=0.489 and 1/ff>= 0.388
+				vowel1=vowel1+1
+			else 
+				vowel1=vowel1+0
+			endif
+			if 1/ff<=0.414 and 1/ff>= 0.313
+				vowel1=vowel1+1
+			else 
+				vowel1=vowel1+0
+			endif
+			if 1/ff<=0.312 and 1/ff>= 0.211
+				vowel1=vowel1+1
+			else 
+				vowel1=vowel1+0
+			endif
+			if 1/ff<=0.569 and 1/ff>= 0.469
+				vowel1=vowel1+1
+			else 
+				vowel1=vowel1+0
+			endif
+			
+			counter1=counter1+1
+	
+		if lnf1>='f1lowlim' and lnf1<='f1uplim' 
+			inside = 'inside'+1
+			else
+			   outside = 'outside'+1
+		endif
+		
+		vectorf# [k] = ff
+	
+		fff = 'fff'+'f1uplim'
+		eee = 'eee'+'f1lowlim'
 			ffff = 'fff'/'int'
 			eeee = 'eee'/'int'
 			pron =('inside'*100)/('inside'+'outside')
